@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prints</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<!--navigation-->
+    <header>
+        <nav class="navbar flex container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="avnart logo">
+            </a>
+
+            <div class="navlist flex">              
+                <a href="index.html" class="link link-active">home</a>
+                <a href="stickers.html" class="link">stickers</a>
+                <a href="prints.html" class="link">prints</a>
+            </div>
+
+            <div class="nav-icons flex">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-bag-shopping fa-2x"></i>
+                    <span id="cart-count">0</span>
+                </a>               
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <!-- Shopping Cart Popup -->
+        <div class="whole-cart-window hide">
+            <h2>Your Cart</h2>
+            <ul id="cart" class="cart-wrapper"></ul>
+            <p id="total" class="subtotal">Total: $0.00</p>
+            <button class="checkout-btn" id="checkout-btn">Checkout</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+     <main>
+
+        <!-- Stickers -->
+        <section class="section">
+            <div class="container">
+                <h2>Prints</h2>
+                <div class="card-container">
+
+                    <div class="card" id="item1">
+                        <div class="card-image"><img src="images/533x533/card_image_004.jpg" alt="4x6 Kiss Under Moonlight Print" id="img_000"></div>
+
+                        <div class="card-content">
+                            <p class="title">4x6 Kiss Under Moonlight Print</p>
+                            <div class="amount"><span class="price">5.00</span></div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="item2">
+                        <div class="card-image"><img src="images/533x533/card_image_005.jpg" alt="4x6 Kiss Under Moonlight Print" id="img_002"></div>
+
+                        <div class="card-content">
+                            <p class="title">4x6 | Rockstar Print</p>
+                            <div class="amount"><span class="price">5.00</span></div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>  
+        </section>
+
+        <!-- Sale Container -->
+         <section class="section">
+            <div class="sale-container">
+                <h3>New Trends 2025</h3>
+                <h1>Fall Collection</h1>
+                <div class="line"></div>
+                <h4>Big Sale of this week</h4>
+                <button onclick="document.location='stickers.html'">shop now</button>
+            </div>
+         </section>       
+         
+        <!--newsletter-->
+         <section class="section">
+            <div class="bg">
+                <form class="container flex wrap">
+                    <h3>Join our Newsletter</h3>
+
+                    <div class="input-container flex">
+                        <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off">
+
+                        <button>Subscribe</button>                        
+                    </div>
+
+                    <div class="social-icons flex">
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+         </section>
+     </main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-heading footer-1">
+            <h2>Shop</h2>
+            <a class="footer-link">About Us</a>
+            <a class="footer-link">Terms of Service</a>
+            <a class="footer-link">Refund Policy</a>
+            <a class="footer-link">Contact Us</a>
+        </div>
+
+        <div class="footer-newsletter">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Your Email">
+            <input type="submit" value="Sign Up">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy;2025 Norma Villegas</p>
+    </div>
+</footer>
+<!--js-->
+     <script src="js/script.js"></script>
+</body>
+</html>

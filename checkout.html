@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Items</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Your existing site CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<!-- Navbar -->
+    <header>
+        <nav class="navbar flex container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="avnart logo">
+            </a>
+
+            <div class="navlist flex">              
+                <a href="index.html" class="link">home</a>
+                <a href="stickers.html" class="link">stickers</a>
+                <a href="prints.html" class="link">prints</a>
+            </div>
+
+            <div class="nav-icons flex">              
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+<main>
+    <section class="section container">
+        <h2>Your Shopping Bag</h2>
+
+        <!-- Cart Items Section -->
+        <div id="cart-page-wrapper">
+
+            <p class="cart-empty-message hide">Your shopping bag is empty.</p>
+            
+            <div class="cart-page-item flex" id="item1">
+                <img src="images/533x533/card_image_001.jpg" alt="" id="img_000">
+                <div class="details">
+                    <h3>Item Name</h3>
+                    <p>$9.00</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+
+            <div class="cart-page-item flex" id="item2">
+                <img src="images/533x533/card_image_003.jpg" alt="" id="img_001">
+                <div class="details">
+                    <h3>Item Name</h3>
+                    <p>$5.00</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            
+
+        </div>
+
+        <!-- <div class="subtotal" id="pageSubtotal">
+            Subtotal: $14.00
+        </div>
+        <div class="tax" id="pageTax">
+            Tax: $14.00
+        </div>
+        <div class="total" id="pageTotal">
+            Total: $14.00
+        </div> -->
+        <div class="summary">
+            <p>Subtotal: $<span class="subtotal" id="pageSubtotal">0.00</span></p>
+            <p>Tax: $<span class="tax" id="pageTax">0.00</span></p>
+            <p>Total: $<span class="total" id="pageTotal">0.00</span></p>
+        </div>
+
+        <button class="checkout" id="checkout">
+            Proceed to Checkout
+        </button>
+    </section>
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-heading footer-1">
+            <h2>Shop</h2>
+            <a class="footer-link">About Us</a>
+            <a class="footer-link">Terms of Service</a>
+            <a class="footer-link">Refund Policy</a>
+            <a class="footer-link">Contact Us</a>
+        </div>
+
+        <div class="footer-newsletter">
+            <h2>Join our newsletter</h2>
+            <input type="email" placeholder="Your Email">
+            <input type="submit" value="Sign Up">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy;2025 Norma Villegas</p>
+    </div>
+</footer>
+
+<!-- JS -->
+<!-- <script src="js/script.js"></script> -->
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
